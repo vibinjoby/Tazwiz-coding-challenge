@@ -27,11 +27,13 @@ export default function ExploreScreen({route, navigation}) {
       setIsLoading(false);
     } catch (error) {
       console.log(error);
-      Alert.alert('Unable to Fetch data from api', error, {
-        text: 'Ok',
-        onPress: () => setIsLoading(false),
-        style: 'cancel',
-      });
+      Alert.alert('Unable to Fetch data from api', error, [
+        {
+          text: 'OK',
+          onPress: () => setIsLoading(false),
+          style: 'cancel',
+        },
+      ]);
       setIsLoading(false);
     }
   };

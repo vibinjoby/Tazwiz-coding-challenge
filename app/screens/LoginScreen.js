@@ -72,7 +72,7 @@ export default function LoginScreen({route, navigation}) {
     } catch (error) {
       Alert.alert('Unable to Login', error, [
         {
-          title: 'OK',
+          text: 'OK',
           onPress: () => setIsLoading(false),
           style: 'cancel',
         },
