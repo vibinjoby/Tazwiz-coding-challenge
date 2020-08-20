@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "393073135707",
+    "firebase_url": "https://whatsappbot-gshfsn.firebaseio.com",
+    "project_id": "whatsappbot-gshfsn",
+    "storage_bucket": "whatsappbot-gshfsn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393073135707:android:d3614d30a619b72b186f7e",
+        "android_client_info": {
+          "package_name": "com.punch.me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393073135707-mv7443b1c3q3ofjk5gps6k7vfgphm9ea.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.punch.me",
+            "certificate_hash": "b1d52434e1493c0eed4fe6a9aad9d4789a67a373"
+          }
+        },
+        {
+          "client_id": "393073135707-gdkaf3o377sq3eg6kq5c5hejlqaitgp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzqO685oMSk-Z87uyprL6WD6T-bXfx0D8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393073135707-gdkaf3o377sq3eg6kq5c5hejlqaitgp2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "393073135707-aho48qb0gveco51s3qabknl368j4javl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tazwiz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393073135707:android:85373a020c3bd18a186f7e",
+        "android_client_info": {
+          "package_name": "com.tazwiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393073135707-9kedk1e5schur7h8c0jm017lpcfo9tdr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tazwiz",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "393073135707-gdkaf3o377sq3eg6kq5c5hejlqaitgp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzqO685oMSk-Z87uyprL6WD6T-bXfx0D8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393073135707-gdkaf3o377sq3eg6kq5c5hejlqaitgp2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "393073135707-aho48qb0gveco51s3qabknl368j4javl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tazwiz"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

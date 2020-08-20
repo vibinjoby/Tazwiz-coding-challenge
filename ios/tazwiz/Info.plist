@@ -32,6 +32,14 @@
 				<string>tazwiz</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.393073135707-aho48qb0gveco51s3qabknl368j4javl</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
@@ -52,6 +60,16 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Proxima-Nova-Alt-Bold.ttf</string>
+		<string>Proxima-Nova-Alt-Light.ttf</string>
+		<string>Proxima-Nova-Alt-Thin.otf</string>
+		<string>ProximaNova-Black.otf</string>
+		<string>ProximaNova-Bold.otf</string>
+		<string>ProximaNova-Regular.otf</string>
+		<string>ProximaNova-Thin.otf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -66,15 +84,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Proxima-Nova-Alt-Bold.ttf</string>
-		<string>Proxima-Nova-Alt-Light.ttf</string>
-		<string>Proxima-Nova-Alt-Thin.otf</string>
-		<string>ProximaNova-Black.otf</string>
-		<string>ProximaNova-Bold.otf</string>
-		<string>ProximaNova-Regular.otf</string>
-		<string>ProximaNova-Thin.otf</string>
-	</array>
 </dict>
 </plist>

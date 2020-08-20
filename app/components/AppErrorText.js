@@ -1,10 +1,14 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {StyleSheet, Text} from 'react-native';
 
-export default function AppErrorText(props) {
-  return <View style={styles.container}></View>;
+export default function AppErrorText({children}) {
+  return <Text style={styles.text}>{children}</Text>;
 }
-
 const styles = StyleSheet.create({
-  container: {},
+  text: {
+    fontFamily: 'ProximaNova-Regular',
+    fontSize: 12,
+    color: 'red',
+    marginBottom: 5,
+  },
 });

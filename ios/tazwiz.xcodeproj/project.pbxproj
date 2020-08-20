@@ -16,17 +16,18 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* tazwizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tazwizTests.m */; };
-		4759D500E1E0701E0E5F146D /* libPods-tazwiz-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9170E6AFB7B1163A8F65D56 /* libPods-tazwiz-tvOS.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		BC07BABE9E30D3585AB32539 /* libPods-tazwiz-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBCB98DD8C0141830D58395 /* libPods-tazwiz-tvOSTests.a */; };
-		F1B4FBA0C4473E8F69347A0D /* libPods-tazwiz-tazwizTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29757CD904E0158100A08BC4 /* libPods-tazwiz-tazwizTests.a */; };
-		4FFFC11711F44D368062F687 /* Proxima-Nova-Alt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5C06E1EC7A445B595C654C9 /* Proxima-Nova-Alt-Bold.ttf */; };
-		83CEBA39A0794B7EAE313B00 /* Proxima-Nova-Alt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF6FBDD62D0B46B199618F61 /* Proxima-Nova-Alt-Light.ttf */; };
-		D2431E880E44432284E08D52 /* Proxima-Nova-Alt-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 760EDF63D0424495B88CA31A /* Proxima-Nova-Alt-Thin.otf */; };
-		4C1A4E9DE3C1401CA875C273 /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5EA8EB322584F2897169D02 /* ProximaNova-Black.otf */; };
 		2EF15A130E6645079343793D /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A208C85B55EC438A84B1B4BF /* ProximaNova-Bold.otf */; };
+		45D8BC9724EEA5460084E486 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45D8BC9624EEA5450084E486 /* GoogleService-Info.plist */; };
+		4759D500E1E0701E0E5F146D /* libPods-tazwiz-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9170E6AFB7B1163A8F65D56 /* libPods-tazwiz-tvOS.a */; };
+		4C1A4E9DE3C1401CA875C273 /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5EA8EB322584F2897169D02 /* ProximaNova-Black.otf */; };
+		4FFFC11711F44D368062F687 /* Proxima-Nova-Alt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5C06E1EC7A445B595C654C9 /* Proxima-Nova-Alt-Bold.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		83CEBA39A0794B7EAE313B00 /* Proxima-Nova-Alt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF6FBDD62D0B46B199618F61 /* Proxima-Nova-Alt-Light.ttf */; };
 		A086BEF5D1E2427380FCE17B /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CF506CC9A0F45D3A2F20CA2 /* ProximaNova-Regular.otf */; };
 		BAD2DBF4D8A64488994CF475 /* ProximaNova-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 808FA2C1C4114D2E847704FD /* ProximaNova-Thin.otf */; };
+		BC07BABE9E30D3585AB32539 /* libPods-tazwiz-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBCB98DD8C0141830D58395 /* libPods-tazwiz-tvOSTests.a */; };
+		D2431E880E44432284E08D52 /* Proxima-Nova-Alt-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 760EDF63D0424495B88CA31A /* Proxima-Nova-Alt-Thin.otf */; };
+		F1B4FBA0C4473E8F69347A0D /* libPods-tazwiz-tazwizTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29757CD904E0158100A08BC4 /* libPods-tazwiz-tazwizTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +63,19 @@
 		2D02E47B1E0B4A5D006451C7 /* tazwiz-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tazwiz-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* tazwiz-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tazwiz-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A42ED72259117C2C17582B0 /* Pods-tazwiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tazwiz.debug.xcconfig"; path = "Target Support Files/Pods-tazwiz/Pods-tazwiz.debug.xcconfig"; sourceTree = "<group>"; };
+		45D8BC9624EEA5450084E486 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "tazwiz/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		59F0FCAFD9BC5A60366A6237 /* Pods-tazwiz-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tazwiz-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-tazwiz-tvOSTests/Pods-tazwiz-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		6CF506CC9A0F45D3A2F20CA2 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNova-Regular.otf"; path = "../app/assets/fonts/ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		760EDF63D0424495B88CA31A /* Proxima-Nova-Alt-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Proxima-Nova-Alt-Thin.otf"; path = "../app/assets/fonts/Proxima-Nova-Alt-Thin.otf"; sourceTree = "<group>"; };
+		808FA2C1C4114D2E847704FD /* ProximaNova-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNova-Thin.otf"; path = "../app/assets/fonts/ProximaNova-Thin.otf"; sourceTree = "<group>"; };
 		80E87CFE05C994388A965A64 /* Pods-tazwiz-tazwizTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tazwiz-tazwizTests.debug.xcconfig"; path = "Target Support Files/Pods-tazwiz-tazwizTests/Pods-tazwiz-tazwizTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = tazwiz/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A00532A4B78C8F444F57C79B /* Pods-tazwiz-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tazwiz-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-tazwiz-tvOSTests/Pods-tazwiz-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A208C85B55EC438A84B1B4BF /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNova-Bold.otf"; path = "../app/assets/fonts/ProximaNova-Bold.otf"; sourceTree = "<group>"; };
 		CA7E149ECCE411E9F83A977F /* Pods-tazwiz-tazwizTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tazwiz-tazwizTests.release.xcconfig"; path = "Target Support Files/Pods-tazwiz-tazwizTests/Pods-tazwiz-tazwizTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5C06E1EC7A445B595C654C9 /* Proxima-Nova-Alt-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Proxima-Nova-Alt-Bold.ttf"; path = "../app/assets/fonts/Proxima-Nova-Alt-Bold.ttf"; sourceTree = "<group>"; };
+		D5EA8EB322584F2897169D02 /* ProximaNova-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNova-Black.otf"; path = "../app/assets/fonts/ProximaNova-Black.otf"; sourceTree = "<group>"; };
+		DF6FBDD62D0B46B199618F61 /* Proxima-Nova-Alt-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Proxima-Nova-Alt-Light.ttf"; path = "../app/assets/fonts/Proxima-Nova-Alt-Light.ttf"; sourceTree = "<group>"; };
 		E4E90DBED2BCF81D3E2E0537 /* Pods-tazwiz-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tazwiz-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-tazwiz-tvOS/Pods-tazwiz-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E9170E6AFB7B1163A8F65D56 /* libPods-tazwiz-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tazwiz-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC02837BDAD93ACD778393CB /* Pods-tazwiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tazwiz.release.xcconfig"; path = "Target Support Files/Pods-tazwiz/Pods-tazwiz.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,13 +83,6 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EDBCB98DD8C0141830D58395 /* libPods-tazwiz-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tazwiz-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD895D01476DDC76E5EC40E9 /* Pods-tazwiz-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tazwiz-tvOS.release.xcconfig"; path = "Target Support Files/Pods-tazwiz-tvOS/Pods-tazwiz-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		D5C06E1EC7A445B595C654C9 /* Proxima-Nova-Alt-Bold.ttf */ = {isa = PBXFileReference; name = "Proxima-Nova-Alt-Bold.ttf"; path = "../app/assets/fonts/Proxima-Nova-Alt-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DF6FBDD62D0B46B199618F61 /* Proxima-Nova-Alt-Light.ttf */ = {isa = PBXFileReference; name = "Proxima-Nova-Alt-Light.ttf"; path = "../app/assets/fonts/Proxima-Nova-Alt-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		760EDF63D0424495B88CA31A /* Proxima-Nova-Alt-Thin.otf */ = {isa = PBXFileReference; name = "Proxima-Nova-Alt-Thin.otf"; path = "../app/assets/fonts/Proxima-Nova-Alt-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D5EA8EB322584F2897169D02 /* ProximaNova-Black.otf */ = {isa = PBXFileReference; name = "ProximaNova-Black.otf"; path = "../app/assets/fonts/ProximaNova-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A208C85B55EC438A84B1B4BF /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; name = "ProximaNova-Bold.otf"; path = "../app/assets/fonts/ProximaNova-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6CF506CC9A0F45D3A2F20CA2 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; name = "ProximaNova-Regular.otf"; path = "../app/assets/fonts/ProximaNova-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		808FA2C1C4114D2E847704FD /* ProximaNova-Thin.otf */ = {isa = PBXFileReference; name = "ProximaNova-Thin.otf"; path = "../app/assets/fonts/ProximaNova-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				45D8BC9624EEA5450084E486 /* GoogleService-Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -213,7 +216,7 @@
 			sourceTree = "<group>";
 		};
 		CE89D1D66B3B4DF08FAF240D /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				D5C06E1EC7A445B595C654C9 /* Proxima-Nova-Alt-Bold.ttf */,
 				DF6FBDD62D0B46B199618F61 /* Proxima-Nova-Alt-Light.ttf */,
@@ -225,7 +228,6 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -323,6 +325,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = MZ4NR6L53X;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -376,6 +379,7 @@
 				D2431E880E44432284E08D52 /* Proxima-Nova-Alt-Thin.otf in Resources */,
 				4C1A4E9DE3C1401CA875C273 /* ProximaNova-Black.otf in Resources */,
 				2EF15A130E6645079343793D /* ProximaNova-Bold.otf in Resources */,
+				45D8BC9724EEA5460084E486 /* GoogleService-Info.plist in Resources */,
 				A086BEF5D1E2427380FCE17B /* ProximaNova-Regular.otf in Resources */,
 				BAD2DBF4D8A64488994CF475 /* ProximaNova-Thin.otf in Resources */,
 			);
@@ -411,7 +415,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -478,10 +482,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-tazwiz/Pods-tazwiz-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,10 +546,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-tazwiz-tazwizTests/Pods-tazwiz-tazwizTests-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,6 +700,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZ4NR6L53X;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = tazwiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -700,7 +709,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tazwiz;
 				PRODUCT_NAME = tazwiz;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -715,6 +724,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZ4NR6L53X;
 				INFOPLIST_FILE = tazwiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -722,7 +732,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tazwiz;
 				PRODUCT_NAME = tazwiz;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
