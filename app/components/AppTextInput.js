@@ -15,6 +15,7 @@ export default function AppTextInput({
   touched,
   errors,
   name,
+  onPress,
   ...otherProps
 }) {
   return (
@@ -25,6 +26,7 @@ export default function AppTextInput({
           style={[styles.textInput, customStyles]}
           {...otherProps}
           autoCapitalize="none"
+          onFocus={onPress}
           onChangeText={text => onChangeText && onChangeText(text)}
         />
       </View>

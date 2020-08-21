@@ -8,6 +8,7 @@ import {
   Alert,
   Keyboard,
 } from 'react-native';
+import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
 import exploreService from '../services/ExploreService';
 import colors from '../config/colors';
 import routes from '../navigation/routes';

@@ -1,20 +1,55 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {View, StyleSheet} from 'react-native';
 import * as yup from 'yup';
 import {Formik} from 'formik';
+
 import AppTextInput from '../components/AppTextInput';
 import AppButton from '../components/AppButton';
 import colors from '../config/colors';
-import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
+import routes from '../navigation/routes';
+import {AppDateTimePicker} from '../components/AppDateTimePicker';
 
-export default function PostTaskScreen() {
+export default function PostTaskScreen({route, navigation}) {
+  const [addressVal, setAddressVal] = useState('');
+  useEffect(() => {
+    route && route.params && setAddressVal(route.params.address);
+  }, [route.params]);
+
+  const handleAddressSearch = () => {
+    navigation.navigate(routes.PLACES_SCREEN);
+  };
+
   const data = [
-    {key: 1, placeholder: 'Title', name: 'title'},
-    {key: 2, placeholder: 'Address', name: 'address'},
-    {key: 3, placeholder: 'Date', name: 'date'},
-    {key: 4, placeholder: 'Phone Number', name: 'phoneNumber'},
-    {key: 5, placeholder: 'Email', name: 'email'},
-    {key: 6, placeholder: 'Description', name: 'description', multiline: true},
+    {
+      key: 1,
+      placeholder: 'Title',
+      name: 'title',
+      type: 'text',
+      autoFocus: true,
+    },
+    {
+      key: 2,
+      placeholder: 'Address',
+      type: 'text',
+      name: 'address',
+      onPress: handleAddressSearch,
+    },
+    {key: 3, placeholder: 'Date', name: 'date', type: 'date'},
+    {
+      key: 4,
+      placeholder: 'Phone Number',
+      name: 'phoneNumber',
+      keyboardType: 'numeric',
+      type: 'text',
+    },
+    {
+      key: 5,
+      placeholder: 'Email',
+      name: 'email',
+      keyboardType: 'email-address',
+      type: 'text',
+    },
+    {key: 6, placeholder: 'Description', name: 'description', type: 'text'},
   ];
   const handlePostTask = values => {
     console.log(values);
@@ -36,10 +71,7 @@ export default function PostTaskScreen() {
             .string()
             .label('Title')
             .required(),
-          address: yup
-            .string()
-            .label('Address')
-            .required(),
+          address: yup.string().label('Address'),
           date: yup
             .string()
             .label('Date')
@@ -47,6 +79,7 @@ export default function PostTaskScreen() {
           phoneNumber: yup
             .number()
             .label('Phone Number')
+            .min(10)
             .required(),
           email: yup
             .string()
@@ -69,32 +102,32 @@ export default function PostTaskScreen() {
           validateForm,
         }) => (
           <>
-            {data.map(item => (
-              <AppTextInput
-                customStyles={{color: colors.black}}
-                key={item.key.toString()}
-                placeholder={item.placeholder}
-                multiline={item.multiline}
-                onBlur={() => setFieldTouched(item.name)}
-                onFocus={() => validateForm()}
-                onChangeText={handleChange(item.name)}
-                touched={touched}
-                name={item.name}
-                errors={errors}
-              />
-            ))}
-            <GooglePlacesAutocomplete
-              placeholder="Search"
-              onPress={(data, details = null) => {
-                // 'details' is provided when fetchDetails = true
-                console.log(data, details);
-              }}
-              onFail={error => console.error(error)}
-              query={{
-                key: 'AIzaSyDX2XCz_l5e5EXVhEWArkeLnwshJ4uvIaw',
-                language: 'en',
-              }}
-            />
+            {data.map(item => {
+              if (item.type === 'text') {
+                return (
+                  <AppTextInput
+                    key={item.key}
+                    autoFocus={item.autoFocus}
+                    customStyles={{color: colors.black}}
+                    key={item.key.toString()}
+                    keyboardType={item.keyboardType}
+                    placeholder={item.placeholder}
+                    multiline={item.multiline}
+                    onBlur={() => setFieldTouched(item.name)}
+                    onFocus={() => validateForm()}
+                    onChangeText={handleChange(item.name)}
+                    touched={touched}
+                    name={item.name}
+                    onPress={item.onPress}
+                    errors={errors}
+                    value={item.name === 'address' && addressVal}
+                  />
+                );
+              } else if (item.type === 'date') {
+                return <AppDateTimePicker key={item.key} />;
+              }
+            })}
+
             <AppButton
               title="POST TASK"
               onPress={() => handlePostTask(values)}

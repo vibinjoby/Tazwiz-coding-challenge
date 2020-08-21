@@ -14,6 +14,7 @@ import PostTaskScreen from '../screens/PostTaskScreen';
 import UserInfoContext from '../context/UserInfoContext';
 import AppLoader from '../helpers/AppLoader';
 import Utils from '../helpers/Utils';
+import PlacesSearchScreen from '../screens/PlacesSearchScreen';
 
 export default function HomeStackNavigator({route, navigation}) {
   const [isLoading, setIsLoading] = useState(false);
@@ -102,6 +103,19 @@ export default function HomeStackNavigator({route, navigation}) {
           component={PostTaskScreen}
           options={{
             headerTitle: 'Post a Task',
+            headerLeft: props => (
+              <HeaderBackButton
+                {...props}
+                label="Back"
+                tintColor={colors.white}
+              />
+            ),
+          }}
+        />
+        <Stack.Screen
+          name={routes.PLACES_SCREEN}
+          component={PlacesSearchScreen}
+          options={{
             headerLeft: props => (
               <HeaderBackButton
                 {...props}

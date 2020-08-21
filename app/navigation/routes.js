@@ -5,4 +5,5 @@ export default Object.freeze({
   HOME: 'Home',
   EXPLORE: 'Explore',
   POST_TASK: 'PostTask',
+  PLACES_SCREEN: 'Places ',
 });

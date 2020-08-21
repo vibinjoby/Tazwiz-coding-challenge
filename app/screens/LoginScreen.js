@@ -27,6 +27,8 @@ export default function LoginScreen({route, navigation}) {
       //Store the user details to the context api
       userCtxInfo.setIsGoogleSignIn(true);
       userCtxInfo.setUserInfo(userInfo);
+      //Store a dummy token for google sign in
+      Utils.storeAsyncStorageData('token', 'googlesignin');
 
       //Navigate to home page after successful login
       setIsLoading(false);
@@ -112,7 +114,7 @@ export default function LoginScreen({route, navigation}) {
   useEffect(() => {
     //Google sign in configuration
     GoogleSignin.configure({
-      webClientId: process.env.API_KEY, // client ID of type WEB for your server (needed to verify user ID and offline access)
+      webClientId: process.env.SIGN_IN_API_KEY, // client ID of type WEB for your server (needed to verify user ID and offline access)
     });
 
     //If the initial URL when the app opens for the first time is from linking navigate to pre confirmation screen based on the url params
