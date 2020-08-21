@@ -112,8 +112,7 @@ export default function LoginScreen({route, navigation}) {
   useEffect(() => {
     //Google sign in configuration
     GoogleSignin.configure({
-      webClientId:
-        '393073135707-gdkaf3o377sq3eg6kq5c5hejlqaitgp2.apps.googleusercontent.com', // client ID of type WEB for your server (needed to verify user ID and offline access)
+      webClientId: process.env.CLIENT_ID, // client ID of type WEB for your server (needed to verify user ID and offline access)
     });
 
     //If the initial URL when the app opens for the first time is from linking navigate to pre confirmation screen based on the url params
