@@ -13,11 +13,16 @@ import ExploreScreen from '../screens/ExploreScreen';
 import PostTaskScreen from '../screens/PostTaskScreen';
 import UserInfoContext from '../context/UserInfoContext';
 import AppLoader from '../helpers/AppLoader';
+import Utils from '../helpers/Utils';
 
 export default function HomeStackNavigator({route, navigation}) {
   const [isLoading, setIsLoading] = useState(false);
   const userCtxInfo = useContext(UserInfoContext);
   const Stack = createStackNavigator();
+
+  const removeToken = () => {
+    Utils.removeAsyncStorageData('token');
+  };
 
   const googleSignOut = async () => {
     try {
@@ -26,6 +31,7 @@ export default function HomeStackNavigator({route, navigation}) {
       await GoogleSignin.signOut();
       //After sign out navigate to login screen
       setIsLoading(false);
+      removeToken();
       navigation.navigate(routes.LOGIN);
     } catch (error) {
       console.error(error);
@@ -35,6 +41,7 @@ export default function HomeStackNavigator({route, navigation}) {
 
   const usersSignOut = () => {
     setIsLoading(false);
+    removeToken();
     navigation.navigate(routes.LOGIN);
   };
 

@@ -12,6 +12,7 @@ import routes from '../navigation/routes';
 import AppLoader from '../helpers/AppLoader';
 import service from '../services/LoginService';
 import UserInfoContext from '../context/UserInfoContext';
+import Utils from '../helpers/Utils';
 
 export default function LoginScreen({route, navigation}) {
   const [isLoading, setIsLoading] = useState(false);
@@ -22,7 +23,6 @@ export default function LoginScreen({route, navigation}) {
       !isLoading && setIsLoading(true);
       await GoogleSignin.hasPlayServices();
       const userInfo = await GoogleSignin.signIn();
-      console.log(userInfo);
 
       //Store the user details to the context api
       userCtxInfo.setIsGoogleSignIn(true);
@@ -112,7 +112,7 @@ export default function LoginScreen({route, navigation}) {
   useEffect(() => {
     //Google sign in configuration
     GoogleSignin.configure({
-      webClientId: process.env.CLIENT_ID, // client ID of type WEB for your server (needed to verify user ID and offline access)
+      webClientId: process.env.API_KEY, // client ID of type WEB for your server (needed to verify user ID and offline access)
     });
 
     //If the initial URL when the app opens for the first time is from linking navigate to pre confirmation screen based on the url params
@@ -120,6 +120,13 @@ export default function LoginScreen({route, navigation}) {
       const url = await Linking.getInitialURL();
       console.log(url);
       if (url) handleOpenURL({url});
+    })();
+
+    //If the user is previously signed in navigate to home page
+    (async function() {
+      const token = await Utils.fetchAsyncStorageData('token');
+      console.log(token);
+      if (token) navigation.navigate(routes.HOME);
     })();
 
     // Add event listener if the app is in foreground
