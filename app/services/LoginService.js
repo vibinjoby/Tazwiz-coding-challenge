@@ -8,8 +8,9 @@ export async function loginUser(emailId, password) {
     emailId,
     password,
   });
-  //Store the token to local storage so that next time the app loads, user is navigated to home screen
-  Utils.storeAsyncStorageData('token', jwt);
+  //Store the token to local storage if the email is confirmed so that next time the app loads, user is navigated to home screen
+  if (jwtDecode(jwt).isEmailConfirmed)
+    Utils.storeAsyncStorageData('token', jwt);
   return jwtDecode(jwt);
 }
 

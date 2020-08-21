@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  View,
-  StyleSheet,
-  TextInput,
-  KeyboardAvoidingView,
-  Platform,
-} from 'react-native';
+import {View, StyleSheet, TextInput} from 'react-native';
 import colors from '../config/colors';
 import AppErrorText from './AppErrorText';
 
@@ -16,6 +10,7 @@ export default function AppTextInput({
   errors,
   name,
   onPress,
+  value,
   ...otherProps
 }) {
   return (
@@ -26,8 +21,9 @@ export default function AppTextInput({
           style={[styles.textInput, customStyles]}
           {...otherProps}
           autoCapitalize="none"
-          onFocus={onPress}
+          onTouchStart={onPress}
           onChangeText={text => onChangeText && onChangeText(text)}
+          value={value}
         />
       </View>
       {touched[name] && errors[name] && (

@@ -1,16 +1,15 @@
 import React, {useState} from 'react';
-import {View, StyleSheet, TextInput, Platform} from 'react-native';
+import {View, StyleSheet, Text} from 'react-native';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import colors from '../config/colors';
 import moment from 'moment';
-import {TouchableWithoutFeedback} from 'react-native-gesture-handler';
+import AppErrorText from './AppErrorText';
 
-export const AppDateTimePicker = () => {
+export const AppDateTimePicker = ({touched, errors, name, onChangeText}) => {
   const [date, setDate] = useState(moment().format('MMMM Do YYYY'));
   const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
 
   const showDatePicker = () => {
-    console.log('came here');
     setDatePickerVisibility(true);
   };
 
@@ -20,25 +19,25 @@ export const AppDateTimePicker = () => {
 
   const handleConfirm = date => {
     setDate(moment(date).format('MMMM Do YYYY'));
+    //update the onchange of formik
+    onChangeText(moment(date).format('MMMM Do YYYY'));
     hideDatePicker();
   };
 
   return (
     <>
-      <TextInput
-        placeholderTextColor="#A2A2A2"
-        style={styles.textInput}
-        onTouchStart={showDatePicker}
-        editable={false}
-        placeholder="Date"
-        value={date}
-      />
+      <Text style={styles.textInput} onPress={showDatePicker}>
+        {date}
+      </Text>
       <DateTimePickerModal
         isVisible={isDatePickerVisible}
         mode="date"
         onConfirm={handleConfirm}
         onCancel={hideDatePicker}
       />
+      {touched[name] && errors[name] && (
+        <AppErrorText> {errors[name]}</AppErrorText>
+      )}
     </>
   );
 };
